@@ -1,0 +1,80 @@
+===================================================================
+PROGRAM: HitungDurasiWaktu
+DESKRIPSI: Algoritma menghitung durasi waktu lintas hari dengan 
+           deklarasi variabel secara langsung saat digunakan.
+===================================================================
+
+ALGORITMA/PROSEDUR:
+
+    DEKLARASI Again : STRING
+    Again -> "y"
+
+    WHILE (Again = "y" OR Again = "Y")
+        
+        // Input waktu mulai
+        DEKLARASI startHour
+	DO
+		PROMPT "Masukkan Jam Mulai (0-23):" parseINT to startHour
+		IF 0>startHour>23 or startHour=NaN
+			ALERT "Input salah! Jam harus antara 0-23."
+		ENDIF
+        WHILE 0>startHour>23 or startHour=NaN
+	
+ 	DEKLARASI startMinute
+        DO
+		PROMPT "Masukkan Menit Mulai (0-59):" parseINT to startMinute
+		IF 0>startMinute>59 or startMinute=NaN
+			ALERT "Input salah! Menit harus antara 0-59."
+		ENDIF
+	WHILE 0>startMinute>59 or startMinute=NaN
+
+        // Input waktu selesai
+        DEKLARASI endHour
+        DO
+		PROMPT "Masukkan Jam Selesai (0-23):" parseINT to endHour
+        	IF 0>startHour>23 or endHour=NaN
+			ALERT "Input salah! Jam harus antara 0-23."
+		ENDIF
+	WHILE 0>startHour>23 or endHour=NaN
+
+        DEKLARASI endMinute
+        DO
+		PROMPT "Masukkan Menit Selesai (0-59):" parseINT to endMinute
+        	IF 0>startMinute>59 or endMinute=NaN
+			ALERT "Input salah! Menit harus antara 0-59."
+		ENDIF
+	WHILE 0>startMinute>59 or endMinute=NaN
+
+        // Konversi ke total menit
+        DEKLARASI startTotal
+        startTotal -> (startHour * 60) + startMinute
+
+        DEKLARASI endTotal
+        endTotal -> (endHour * 60) + endMinute
+
+        // Penanganan lintas hari (melewati tengah malam)
+        IF endTotal < startTotal THEN
+            endTotal -> endTotal + 1440
+        ENDIF
+
+        // Perhitungan durasi
+        DEKLARASI duration
+        duration -> endTotal - startTotal
+
+        DEKLARASI durationMinute
+        durationMinute -> duration MOD 60
+
+        DEKLARASI durationHour
+        durationHour -> (duration - durationMinute) / 60
+
+        // Output hasil
+        ALERT "Durasi: " + durationHour + " jam " + durationMinute + " menit"
+
+        // Konfirmasi pengulangan
+        PROMPT "Apakah ingin menghitung lagi? (y/n):"
+        	TO Again
+
+    ENDWHILE
+
+    ALERT "Program selesai. Terima kasih!"
+===================================================================
