@@ -1,4 +1,4 @@
- Mini Programming Project
+Mini Programming Project
 
 ## 1. Group Information
 
@@ -47,20 +47,22 @@ This project is designed to apply the following programming concepts:
 
 The program receives:
 
-- The player's guess
-- The number of attempts
+- The starting hour and minute
+- The ending hour and minute
 
 ---
 
 ## 6. Process
 
-The program compares the player's guess with the target number.
+The program calculates the duration between the starting time and the ending time.
 
-If the guess is:
+If the activity:
 
-- Too high → the program provides a "too high" message
-- Too low → the program provides a "too low" message
-- Correct → the player wins
+- Ends after the starting time → the program calculates the duration normally
+- Passes midnight → the program calculates the duration by continuing to the next day
+- The result is calculated → the program converts the duration into hours and minutes
+
+The program also allows the user to perform another calculation.
 
 ---
 
@@ -68,10 +70,11 @@ If the guess is:
 
 The program displays:
 
-- The result of each guess
-- Hints or feedback
-- The number of remaining attempts
-- The final game status (win/loss)
+- The starting time
+- The ending time
+- The calculated duration in hours and minutes
+- The result of the calculation
+- An option to perform another calculation
 
 ---
 
