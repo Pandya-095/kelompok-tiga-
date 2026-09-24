@@ -96,7 +96,7 @@ File:
 
 The JavaScript implementation of the program is available in:
 
-[program.js.txt](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Javascript%202.js) 
+[program.js](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Javascript%202.js) 
 
 ---
 
@@ -106,4 +106,4 @@ The program is tested using several test scenarios.
 
 Testing documentation:
 
-[test-cases.md.txt](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Projek%20LPP%20-%20Kalkulator%20Durasi%20.md)
+[test-cases.md](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Projek%20LPP%20-%20Kalkulator%20Durasi%20.md)
