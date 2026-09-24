@@ -100,7 +100,7 @@ File:
 
 The JavaScript implementation of the program is available in:
 
-`program.js`
+[program.js.txt](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Javascript%202.js) 
 
 ---
 
