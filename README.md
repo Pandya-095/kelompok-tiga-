@@ -110,4 +110,4 @@ The program is tested using several test scenarios.
 
 Testing documentation:
 
-`test-cases.md`
+[test-cases.md.txt](https://github.com/Pandya-095/kelompok-tiga-/blob/main/Projek%20LPP%20-%20Kalkulator%20Durasi%20.md.txt)
