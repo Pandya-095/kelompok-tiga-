@@ -25,7 +25,7 @@ Time & Duration Calculator
 
 ## 3. Project Description
 
-This program is a simple game in which the player must guess a number determined by the computer.
+This program is a time duration calculator that determines how many hours and minutes elapsed between a user entered start time and end time, including activities that cross midnight.
 
 ---
 
