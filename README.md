@@ -86,9 +86,8 @@ The algorithm used in the program is described in:
 
 The flowchart is created using Flowgorithm.
 
-File:
+File: [Flowgorithm Kelompok 3.fprg](Flowgorithm Kelompok 3.fprg)
 
-[Flowgorithm Kelompok 3.fprg](Flowgorithm Kelompok 3.fprg)
 
 ---
 
