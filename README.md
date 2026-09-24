@@ -70,11 +70,7 @@ The program also allows the user to perform another calculation.
 
 The program displays:
 
-- The starting time
-- The ending time
-- The calculated duration in hours and minutes
-- The result of the calculation
-- An option to perform another calculation
+The calculated duration in hours and minutes
 
 ---
 
